@@ -74,14 +74,13 @@ class Element_Grid_Expanded extends \Bricks\Element
         echo '<ul id="og-grid" class="og-grid">';
         if (count($items)) {
             foreach ($items as $index => $item) {
-                $item_link = !empty($item['link']) ? $item['link'] : false;
                 $imagurl = wp_get_attachment_image_url(
                     $item['image']['id'],
                     $item['image']['size'],
                     false,
                     []
                 );
-                $output .= "<li>";
+                $output .= '<li>';
                 if (isset($item['link'])) {
                     $this->set_link_attributes("a-$index", $item['link']);
                     $output .= '<a ' . $this->render_attributes("a-$index") . ' data-largesrc="' . $imagurl . '" data-title="' . $item['title'] . '" data-description="' . $item['content'] . '">';
