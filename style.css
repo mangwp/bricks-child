@@ -8,3 +8,17 @@
  Version:      1.1
  Text Domain:  bricks
 */
+
+.quick-view-product-modal{display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4)}
+.quick-view-product-modal .modal-content{background-color:#fefefe;margin:15% auto;padding:20px;position:relative;border:1px solid #888;width:70%;border-radius:20px}
+.close{color:#aaa;float:right;font-size:28px;position:absolute;font-weight:700;right:30px;z-index:2}
+.close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer}
+.quick-view-product-modal .content-full{
+    display: flex;
+    gap: 20px;
+}
+.quick-view-product-modal .content-right {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}

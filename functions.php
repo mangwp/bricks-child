@@ -45,3 +45,5 @@ add_filter('bricks/builder/i18n', function ($i18n) {
 
   return $i18n;
 });
+
+require_once __DIR__ . '/inc/quick_view.php';
