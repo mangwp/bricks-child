@@ -41,7 +41,6 @@
         };
         $.post('<?php echo esc_url(home_url()); ?>/wp-admin/admin-ajax.php', data, function(response) {
           // display the response
-          console.log(response);
           $(container).empty();
           $(container).html(response);
           modal.style.display = "block";

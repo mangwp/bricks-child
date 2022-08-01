@@ -22,3 +22,13 @@
     gap: 10px;
     flex-direction: column;
 }
+.main-slider .carousel-cell {
+    width: 66%;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .main-slider .carousel-cell img {
+    object-fit: cover;
+    width:100%;
+  }
